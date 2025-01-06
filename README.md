@@ -1,100 +1,97 @@
-项目主要使用 `java.awt` 包进行开发，以下是使用 **AWT** 开发游戏的描述：
-
 ---
 
 # School Bus Game
 
-School Bus Game 是一款使用 **Java** 和 **AWT** 开发的趣味网格益智游戏。玩家需要操控校车完成任务，与人物和物体进行交互，挑战自己的策略规划能力。
+School Bus Game is a fun grid-based puzzle game developed using **Java** and **AWT**. Players control a school bus to complete tasks, interact with characters and objects, and challenge their strategic planning skills.
 
 ![image](https://github.com/user-attachments/assets/d495d4f0-7dd6-4b0f-9ae4-743de65196c6)
 
+---
+
+## Features
+
+- **Pure Java Implementation**: Built using the **AWT** library to provide a simple yet efficient user interface.
+- **Grid-Based Layout**: The game world is displayed in a classic grid format, making it intuitive to navigate.
+- **Interactive Gameplay**: Players control the school bus using the keyboard to interact with map elements like characters and trains.
+- **Real-Time Status Updates**: The top-left corner displays current game time and turn information.
 
 ---
 
-## 游戏特点
+## Project Structure
 
-- **纯 Java 实现**：游戏采用 **AWT** 库开发，展示简洁且高效的用户界面。
-- **网格化布局**：以经典网格形式展现游戏世界，直观易操作。
-- **游戏互动性**：玩家通过键盘控制校车移动，与地图中的其他元素（如人物或火车）进行交互。
-- **实时更新状态**：左上角显示当前的游戏时间和回合信息。
-
----
-
-## 项目结构
-
-- **核心代码**
-  - `Main.java`：游戏的入口类，负责初始化程序。
-  - `GameUtils.java`：基于 **AWT** 的工具绘制类，用于绘制游戏界面和元素。
-  - `GameWin.java`：处理游戏核心逻辑，包括移动规则、碰撞检测和状态更新。
-- **资源**
-  - 图像资源：校车、人物和其他物体的图像素材，用于游戏中的元素显示。
+- **Core Code**
+  - `Main.java`: Entry point of the game, responsible for initializing the program.
+  - `GameUtils.java`: A utility class based on **AWT** for rendering the game interface and elements.
+  - `GameWin.java`: Manages the core game logic, including movement rules, collision detection, and state updates.
+- **Resources**
+  - Image assets: Graphics for the school bus, characters, and other objects used in the game.
 
 ---
 
-## 安装与运行
+## Installation and Running
 
-### 1. **克隆项目**
-在本地克隆仓库：
+### 1. **Clone the Project**
+Clone the repository locally:
 ```bash
 git clone https://github.com/louis-VI/SchoolBusGame.git
 cd SchoolBusGame
 ```
 
-### 2. **运行项目**
-确保已安装 **Java 8** 或更高版本。
+### 2. **Run the Game**
+Ensure **Java 8** or a later version is installed.
 
-#### 使用命令行
+#### Using Command Line
 ```bash
 javac -d out src/*.java
 java -cp out Main
 ```
 
-#### 使用 IDE
-- 打开任意支持 Java 的 IDE（如 IntelliJ IDEA、Eclipse）。
-- 将项目作为 Java 项目导入。
-- 运行 `Main.java`。
+#### Using an IDE
+- Open the project in any Java-supporting IDE (e.g., IntelliJ IDEA, Eclipse).
+- Import the project as a Java project.
+- Run `Main.java`.
 
 ---
 
-## 操作说明
+## Gameplay Instructions
 
-1. 游戏启动后，通过 **方向键** 控制校车在网格中移动。
-2. 玩家需要完成目标任务，例如到达某个位置或与人物互动。
-3. 按下 **空格键** 继续到下一轮游戏。
-4. 避免碰撞障碍（如火车等），否则游戏失败。
-
----
-
-## 开发环境
-
-- **开发语言**：Java
-- **核心库**：AWT
-- **最低 Java 版本**：Java 8
+1. After the game starts, use the **arrow keys** to move the school bus on the grid.
+2. Complete the objective tasks, such as reaching a specific location or interacting with characters.
+3. Press the **space bar** to proceed to the next round.
+4. Avoid colliding with obstacles (e.g., trains), as it will result in game failure.
 
 ---
 
-## 游戏截图
+## Development Environment
 
-如上图所示，游戏界面由网格组成，玩家可通过校车与其他元素互动。左上角的实时状态显示帮助玩家掌握游戏进度。
-
----
-
-## 贡献
-
-我们欢迎所有贡献！如果您发现问题或希望增加新功能，可以通过提交 Issue 或发起 Pull Request 来参与。
+- **Programming Language**: Java
+- **Core Library**: AWT
+- **Minimum Java Version**: Java 8
 
 ---
 
-## 许可证
+## Game Screenshot
 
-本项目基于 **MIT License** 开源。
+As shown in the image above, the game interface consists of a grid where players control the school bus to interact with other elements. The real-time status display in the top-left corner helps players track their progress.
 
 ---
 
-### 说明
-1. 确保将 `image.png` 文件放置在项目根目录，以便显示游戏截图。
-2. `README.md` 文件中的描述贴合 **AWT** 的开发环境和实现特点。
-3. 如果需要，可以在游戏逻辑部分进一步添加技术细节（如事件监听和绘图方法）。
+## Contribution
+
+We welcome contributions! If you find issues or wish to add new features, feel free to submit an issue or create a pull request.
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
+
+---
+
+### Notes
+
+1. Ensure the image component files are placed in the project root directory to display the game screenshot.
+2. The descriptions in this `README.md` reflect the development environment and characteristics of an **AWT**-based implementation.
+3. If needed, more technical details (e.g., event listeners and drawing methods) can be added to the game logic section.
 
 --- 
-
